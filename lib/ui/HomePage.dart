@@ -46,7 +46,10 @@ class _HomePageState extends State<HomePage> {
               decoration: InputDecoration(
                   labelText: "Pesquisar GIFs",
                   labelStyle: TextStyle(color: Colors.white),
-                  border: OutlineInputBorder()
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(4)),
+                    borderSide: BorderSide(width: 1,color: Colors.red),
+                  )
               ),
               style: TextStyle(color: Colors.white, fontSize: 18.0),
               textAlign: TextAlign.center,
